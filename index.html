@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Testing Site</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="js/script.js"></script>
+  </head>
+  <body>
+    <header>
+      <h1>Testing Site</h1>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section>
+        <h2>Welcome to my Testing Site!</h2>
+        <!-- <p>This is a sample website layout for testing purposes.</p> -->
+      </section>
+      <form id="checkout-form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="address">Address:</label>
+          <textarea id="address" name="address" required></textarea>
+        </div>
+        <div class="form-group">
+          <label for="payment-method">Payment Method:</label>
+          <select id="payment-method" name="payment-method" required>
+            <option value="">-- Please Select --</option>
+            <option value="credit-card">Credit Card</option>
+            <option value="paypal">PayPal</option>
+            <option value="bitcoin">Bitcoin</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label>Extra Options:</label>
+          <br>
+          <input type="checkbox" id="gift-wrap" name="gift-wrap">
+          <label for="gift-wrap">Gift Wrap ($5.00)</label>
+          <br>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Subscribe to Newsletter</label>
+        </div>
+        <div class="form-group">
+          <button type="submit" id="submit-btn">Submit Order</button>
+        </div>
+      </form>
+    </main>
+    <footer>
+      <p>&copy; 2023 Testing Site</p>
+    </footer>
+  </body>
+</html>
