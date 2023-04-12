@@ -1,0 +1,245 @@
+/*
+
+ Theme Name:   Kings and Convicts Storefront
+
+ Theme URI:    https://shop.kingsandconvicts.com/
+
+ Description:  Kings and Convicts Store
+
+ Author:       Derek
+
+ Author URI:    https://shop.kingsandconvicts.com/
+
+ Template:     storefront
+
+ Version:      1.0
+
+*/
+
+ 
+
+@import url("../storefront/style.css");
+
+
+
+/************** 
+    GENERAL
+**************/
+
+:root {
+    --secondary-color: #625F61;
+    --font-header: sans-serif;
+}
+
+html,body {
+    font-size: 16px;
+    color: #000;
+    font-family: var(--font-header), sans-serif;
+    /* text-transform: uppercase; */
+}
+
+
+
+.cart_totals h2,
+.entry-title,
+.product_title,
+.related.products h2,
+.page-title,
+#order_review_heading,
+.page-description h2,
+.woocommerce-billing-fields h3,
+.woocommerce-shipping-fields span,
+.wc-block-grid__product-title,
+.onsale,
+.wc-block-grid__product-price .woocommerce-Price-amount,
+.products .woocommerce-Price-amount,
+.woocommerce-loop-product__title {
+    color: #000;
+}
+
+.shop_table,
+.woocommerce-cart-form {
+    color: #000;
+}
+
+.button,
+button.alt,
+.widget a.button.checkout,
+.button.checkout,
+button.alt:hover,
+.button.alt,
+.button:hover,
+.button.alt:hover,
+.add_to_cart_button,
+.widget a.button.checkout:hover,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover  {
+    background-color: var(--secondary-color);
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-family: var(--font-header), serif;
+}
+
+.button:hover,
+.widget a.button.checkout:hover,
+.button.alt:hover,
+button.alt:hover,
+.wc-block-grid__products .wc-block-grid__product .wp-block-button__link:hover {
+    color: #000;
+}
+
+.woocommerce-additional-fields {
+    display: none !important;
+}
+
+.woo-variation-swatches.wvs-style-squared .variable-items-wrapper .variable-item.button-variable-item {
+    color: #000;
+}
+
+.entry-title,
+.woocommerce-products-header__title.page-title {
+    text-transform: uppercase;
+}
+
+.page-description h2 {
+    text-transform: uppercase;
+    border-bottom: 2px solid #000;
+}
+.col-full {max-width: 1200px;}
+
+/*************** 
+    HEADER
+***************/
+
+
+.site-header {
+    background-color: grey;
+}
+
+
+
+/******************
+    SHOP-ALL PAGE
+*******************/
+.wc-block-grid__products {
+    justify-content: center;
+}
+.landingwrap {text-align: center;}
+.landingwrap figure {max-width: 48%; position: relative; vertical-align: top; display: inline-block; padding: 12px 10px;}
+.landingwrap figcaption {
+	position: absolute; 
+	left: 0; 
+	right: 0; 
+	top: 45%; 
+	color: #fff; 
+	font-size: 40px;
+	text-shadow: 3px 3px 5px #000;
+    text-transform: uppercase;
+	}
+
+
+
+
+
+
+/******************* 
+    CATEGORY PAGE
+*******************/
+.storefront-sorting {
+    display: none;
+}
+
+.tax-product_cat .products.columns-3 .button.add_to_cart_button {
+    display: none;
+}
+
+/******************* 
+    PRODUCT PAGE
+*******************/
+.related.products .products.columns-3 .button.add_to_cart_button {
+    display: none;
+}
+/************************ 
+    CART/CHECKOUT PAGES
+************************/
+.woocommerce-order,
+.woocommerce-order .order_details,
+.woocommerce-order-details h2,
+.woocommerce-order-details .order_details {
+    
+}
+/*************** 
+    FOOTER
+***************/
+
+
+
+footer {background-color: #625F61; color: #fff; font-family: var(--font-header);}
+
+
+/************************************ 
+    SUPPORT/PRIVACY POLICY/T&C PAGES
+*************************************/
+
+/********************
+    MEDIA QUERIES
+********************/
+
+
+
+
+/*************** 
+    TABLET
+***************/
+@media (max-width: 768px) {
+    #secondary {
+        display: none;
+    }
+
+    .single-product div.product form.cart {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stock {
+        text-align: center;
+    }
+}
+
+
+/*************** 
+    MOBILE
+***************/
+@media only screen and (max-width: 770px) {
+	.ninfootleft {max-width: 100%; width: 100%; text-align: center;}
+	.ninfootright {max-width: 100%; width: 100%;}
+	.ninfootleft img {margin: auto;}
+	.ninfootmenu {text-align: center; margin: 0;}
+	ul.ninfootmenu li {display: block; margin-bottom: 10px;}
+	.landingwrap figure {max-width: 100%;}
+	.landingwrap figcaption {font-size: 30px;}
+	h1.page-title {text-align: center;}
+}
+
+
+/* @font-face {
+    font-family: 'roboto-condensed';
+    src: url('robotocondensed.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'roboto';
+    src: url('roboto.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'roboto-slab';
+    src: url('roboto-slab.woff2') format('woff2');
+}
+@font-face {
+    font-family: 'roboto-slab-nonb';
+    src: url('roboto-slab-nonb.woff2') format('woff2');
+}
+ */
+
+
+
